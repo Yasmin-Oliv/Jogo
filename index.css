@@ -1,0 +1,285 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1a1a1a;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: rgb(51, 163, 126);
+    transition: 0.3s all;
+}
+
+#Team-Cherry-btn {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Logo mini */
+.logo-mini img {
+    width: 100px;
+    height: auto;
+}
+
+/* Seção Principal (Hero) */
+#hero {
+    position: relative;
+    text-align: center;
+}
+
+.background-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.title-logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-logo img {
+    width: 500px;
+    height: auto;
+}
+
+.main-image {
+    margin-top: 0px;
+}
+
+.main-image img {
+    width: 700px;
+    height: auto;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(177, 146, 166, 0.2);
+}
+
+/* Seção de Plataformas Disponíveis */
+#platforms {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#platforms h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.platform-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.platform-icons img {
+    width: 100px;
+    height: auto;
+}
+
+/* Seção de Conteúdo Adicional */
+#additional-content {
+    margin: 40px 0;
+    text-align: center;
+}
+
+#additional-content h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.content-block {
+    width: 45%;
+    margin: 15px;
+    text-align: left;
+}
+
+/* Imagens com bordas arredondadas */
+.content-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Textos com sobreposição e bordas arredondadas */
+.content-block p {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(177, 146, 166, 0.2); /* Leve relevo nas bordas */
+    color: #fff;
+}
+
+/* Seção Team Cherry */
+.team-cherry {
+    background-color: #0d0d0d;
+    padding: 40px 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Seção de informações em grid */
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+/* Estilos para cada coluna de informação */
+.team, .address, .contact, .social {
+    text-align: center;
+}
+
+/* Logo Team Cherry alinhada à direita */
+.logo-container {
+    margin-top: -130px;
+    text-align: right; /* Alinhada à direita */
+    width: 100%; /* Para ocupar toda a largura */
+}
+
+.logo-container img {
+    width: 100px; /* Tamanho da imagem */
+    height: auto;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+footer p {
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .title-logo img {
+        width: 300px;
+    }
+
+    .main-image img {
+        width: 300px;
+    }
+
+    .platform-icons img {
+        width: 80px;
+    }
+
+    .content-block {
+        width: 90%;
+    }
+
+    /* Responsividade para a seção final */
+    .info-section {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-container img {
+        width: 80px;
+    }
+}
+
+/* Novas Alterações (adicione suas alterações aqui) */
+.nova-secao {
+    background-color: #222;
+    padding: 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.nova-secao h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.nova-secao p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.nova-secao img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Alterações adicionais de responsividade */
+@media (max-width: 600px) {
+    .nova-secao h3 {
+        font-size: 20px;
+    }
+
+    .nova-secao img {
+        width: 100%;
+    }
+}
+
+/* Estilo do texto de copyright */
+#copyright-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #ffffff;
+}
